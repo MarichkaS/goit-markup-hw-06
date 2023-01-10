@@ -831,7 +831,7 @@ footer {
 
 /* ----------------button-close-modal------------------ */
 
-.modal-order-service .button-close-modal{
+.button-close-modal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -850,8 +850,10 @@ footer {
     transition: cbackground-color 250ms var(--cubic-bezier);
 }
 
-.modal-order-service .button-close-modal:active{
+.button-close-modal:hover,
+.button-close-modal:active{
     background-color: var(--primary-brand)
+
 }
 
 
@@ -861,7 +863,7 @@ footer {
     height: 8px;
     transition: fill 250ms var(--cubic-bezier);
 }
-
+button:hover .icon-close,
 button:active .icon-close{
     fill: var(--white-color);
 }
@@ -1003,6 +1005,11 @@ textarea::placeholder {
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;
+}
+
+.checbox-modal-text a{
+    color: var(--primary-brand);
+    text-decoration: underline ;
 }
 
 .checbox-modal .checbox{
